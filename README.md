@@ -42,6 +42,7 @@ These instructions will help you set up and run the project on your local machin
    Visit http://localhost:3000 in your browser to use the app.
    
 5. Tree structure
+   ```
    src/
     |-- components/
     |   |-- TodoList.jsx
