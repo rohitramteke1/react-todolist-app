@@ -52,7 +52,8 @@ These instructions will help you set up and run the project on your local machin
     |-- App.js
     |-- index.js
     |-- index.css
-
+   ```
+   
 ### Comments
 The project structure follows the standard React.js conventions, with components, styles, and assets organized in their respective folders. Feel free to explore and modify the code based on your requirements.
 
