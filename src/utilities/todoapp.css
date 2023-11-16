@@ -1,0 +1,139 @@
+
+/* TODO APP CSS */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins&family=Raleway:ital,wght@0,300;0,400;1,400&family=Roboto&display=swap');
+/* font-family: 'Orbitron', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+:root {
+    --input-color: rgb(255, 255, 255);
+    --input-text-color: rgb(0, 0, 0);
+    --white-color: #fff;
+    --dark: #111;
+    --purple: rgb(174, 99, 174);
+    --success: rgb(52, 179, 52);
+    --bg: #9ccff4;
+    --placeholder: gray;
+    --danger: rgb(248, 53, 53);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+    font-family: 'Roboto', sans-serif;
+}
+
+.todo-app {
+    background-color: var(--white-color);
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #70a0c3;
+  }
+
+  .todo-app h2 {
+    color: var(--white-color);
+    background-color: var(--purple);
+    border: none;
+    padding: 10px;
+    margin: 20px 0px 0px 0;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Raleway';
+  }
+  
+  .add-to-list {
+    background-color: var(--input-color);
+    padding: 5px;
+  }
+  
+  .add-to-list button, input{
+    padding: 10px;
+    color: var(--input-text-color);
+  }
+
+  .add-to-list input{
+    font-size: 20px;
+    margin-top: 10px;
+    caret-shape:block;
+    outline: none;
+    border: none;
+    background-color: var(--input-color);
+    caret-color: var(--dark);
+    border-bottom: 3px solid var(--purple);
+  }
+
+  .add-to-list input::placeholder {
+    color: var(--placeholder);
+  }
+
+  .add-to-list button {
+    color: white;
+    background-color: var(--purple);
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    border-radius: 50%;
+  }
+  .add-to-list button:hover {
+    color: white;
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out;
+    background-color: var(--success);
+  }
+
+  .show-list {
+    /* background-color: var(--success ); */
+    padding: 0 30px;
+    margin: 10px;
+    color: var(--purple);
+    font-size: 25px;
+    font-family: 'Raleway';
+    height: 60%;
+    overflow-y:scroll;
+  }
+  .show-list::-webkit-scrollbar {
+    width: 12px; /* width of the scrollbar */
+  }
+  
+  .show-list::-webkit-scrollbar-thumb {
+    background-color: #dddddd; /* color of the thumb */
+    border-radius: 6px; /* roundness of the thumb */
+  }
+  
+  .show-list::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* color of the track */
+  }
+  .show-list ul li {
+    list-style-type: none;
+    margin: 10px 0;
+  }
+  .show-list ul li i {
+    margin-right: 10px;
+    font-weight: 700;
+  }
+  .show-list ul li i:hover {
+    color: var(--danger);
+    cursor: pointer;
+  }
+
+  /* Media Queries */
+  @media screen and (max-width: 400px) {
+    /* Styles for larger screens */
+    body {
+      font-size: 16px;
+    }
+    .todo-app {
+      width: 70%;
+    }
+    .add-to-list button{
+      padding: 10px 15px;
+    }
+    .add-to-list input {
+      width: 76%;
+      padding: 10px;
+    }
+  }
